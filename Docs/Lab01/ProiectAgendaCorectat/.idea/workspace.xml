@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a366959-9e49-4bbf-802b-cabefa19af5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java" afterPath="$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java" afterPath="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddContactTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddContactTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="170">
+              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -126,12 +126,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepositoryContactMock.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RepositoryContactMock.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="257">
+              <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+              <folding>
+                <element signature="e#1501#1502#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#1553#1554#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/main/java/agenda/model/validator/UserValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryUserFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryUserMock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/test/TestCase1ECP.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/test/TestCase2ECP.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/model/repository/classes/TestCase2ECP.java" />
@@ -250,6 +254,7 @@
         <option value="$PROJECT_DIR$/src/test/java/agenda/test/TestCase1BVA.java" />
         <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java" />
       </list>
     </option>
   </component>
@@ -812,7 +817,7 @@
       <workItem from="1555421162094" duration="2658000" />
       <workItem from="1555774634545" duration="1891000" />
       <workItem from="1555779249539" duration="1106000" />
-      <workItem from="1556630173916" duration="4151000" />
+      <workItem from="1556630173916" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="DA">
       <created>1556636624144</created>
@@ -849,7 +854,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556638882269</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="DA">
+      <created>1556638925133</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556638925133</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -868,11 +880,14 @@
     <history-entry file="AddContactTest - 2019.04.30 at 18h 01m 22s.xml">
       <configuration name="AddContactTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AddContactTest - 2019.04.30 at 18h 43m 48s.xml">
+      <configuration name="AddContactTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddContactTest - 2019.04.30 at 18h 44m 15s.xml">
+      <configuration name="AddContactTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestCase1BVA - 2019.04.30 at 17h 09m 05s.xml">
       <configuration name="TestCase1BVA" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCase3ECP - 2019.04.30 at 17h 07m 21s.xml">
-      <configuration name="TestCase3ECP" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestCase3ECP - 2019.04.30 at 17h 07m 43s.xml">
       <configuration name="TestCase3ECP" configurationId="JUnit" />
@@ -880,12 +895,9 @@
     <history-entry file="TestCase3ECP - 2019.04.30 at 17h 08m 13s.xml">
       <configuration name="TestCase3ECP" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestValidAfis_and_1_more - 2019.04.20 at 18h 53m 03s.xml">
-      <configuration name="TestValidAfis and 1 more" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49604000" />
+    <option name="totallyTimeSpent" value="49763000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -909,8 +921,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23893334" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
@@ -1258,14 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/TestCase1BVA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -1308,9 +1312,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="170">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+          <folding>
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

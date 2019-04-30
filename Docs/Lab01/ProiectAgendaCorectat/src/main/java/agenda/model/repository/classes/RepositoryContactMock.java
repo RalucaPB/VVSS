@@ -36,12 +36,12 @@ private ContactValidator validator;
 
 	@Override
 	public void addContact(Contact contact) {
-		try {
+		/*try {
 			validator.validate(contact);
 		} catch (ValidatorException e) {
 			e.printStackTrace();
 		}
-
+*/
 		contacts.add(contact);
 	}
 
