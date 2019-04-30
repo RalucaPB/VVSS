@@ -2,6 +2,7 @@ package agenda.test;
 
 import static org.junit.Assert.*;
 
+import agenda.model.repository.classes.RepositoryContactFile;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,19 +20,20 @@ public class AddContactTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		rep = new RepositoryContactMock();
+		rep = new RepositoryContactFile();
 	}
 	
 	@Test
 	public void testCase1()
 	{
 		try {
-			con = new Contact("name", "address1", "+4071122334455");
+			con = new Contact("Monica", "strada Panselutei", "+12345","a@yahoo.com");
+			rep.addContact(con);
 		} catch (InvalidFormatException e) {
 			assertTrue(false);
 		}
 		//int n = rep.count();
-		rep.addContact(con);
+
 		for(Contact c : rep.getContacts())
 			if (c.equals(con))
 			{
@@ -44,32 +46,58 @@ public class AddContactTest {
 	@Test
 	public void testCase2()
 	{
-		try{
-			rep.addContact((Contact) new Object());
+
+		try {
+			con = new Contact("Dan", "strada Panselutei", "+12345","a@yahoo.com");
+			rep.addContact(con);
+		} catch (InvalidFormatException e) {
+			assertTrue(false);
 		}
-		catch(Exception e)
-		{
-			assertTrue(true);
-		}	
+		//int n = rep.count();
+
+		for(Contact c : rep.getContacts())
+			if (c.equals(con))
+			{
+				assertTrue(true);
+				break;
+			}
 	}
 	
 	@Test
 	public void testCase3()
 	{
-		for(Contact c : rep.getContacts())
-			rep.removeContact(c);
-		
 		try {
-			con = new Contact("name", "address1", "+071122334455");
+			con = new Contact("Monica", "strada Panselutei", "12345","a@yahoo.com");
 			rep.addContact(con);
 		} catch (InvalidFormatException e) {
-			assertTrue(false);
+			assertFalse(false);
 		}
-		int n  = rep.count();
-		if (n == 1) 
-			if (con.equals(rep.getContacts().get(0))) assertTrue(true);
-			else assertTrue(false);
-		else assertTrue(false);
+
+		for(Contact c : rep.getContacts())
+			if (c.equals(con))
+			{
+				assertFalse(true);
+				break;
+			}
 	}
-	
+
+	@Test
+	public void testCase4()
+	{
+		try {
+			con = new Contact("Ed", "strada Panselutei", "12345", "a@yahoo.com");
+			rep.addContact(con);
+		} catch (InvalidFormatException e) {
+			assertFalse(false);
+		}
+		for(Contact c : rep.getContacts())
+			if (c.equals(con))
+			{
+				assertFalse(true);
+				break;
+			}
+	}
+
+
+
 }
