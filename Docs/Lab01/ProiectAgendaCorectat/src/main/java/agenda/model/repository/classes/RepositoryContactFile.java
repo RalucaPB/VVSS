@@ -17,7 +17,7 @@ import agenda.model.validator.ValidatorException;
 
 public class RepositoryContactFile implements RepositoryContact {
 
-	private static final String filename = "Docs\\Lab01\\ProiectAgendaCorectat\\files\\contacts.txt";
+	private static final String filename = "VVSS\\Docs\\Lab01\\ProiectAgendaCorectat\\files\\contacts.txt";
 	private List<Contact> contacts;
 
 	public RepositoryContactFile() throws Exception {
