@@ -2,7 +2,7 @@ package agenda.test;
 
 import static org.junit.Assert.*;
 
-import agenda.model.repository.classes.RepositoryContactFile;
+
 import org.junit.Before;
 import org.junit.Test;
 
