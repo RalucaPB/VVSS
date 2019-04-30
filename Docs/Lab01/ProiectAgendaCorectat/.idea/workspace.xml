@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a366959-9e49-4bbf-802b-cabefa19af5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java" afterPath="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java" afterPath="$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddContactTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddContactTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -116,7 +116,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepositoryContactFile.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RepositoryContactFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -248,8 +248,8 @@
         <option value="$PROJECT_DIR$/src/test/java/agenda/test/BigBang.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/test/TestCase3ECP.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/test/TestCase1BVA.java" />
-        <option value="$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java" />
+        <option value="$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java" />
       </list>
     </option>
   </component>
@@ -812,7 +812,7 @@
       <workItem from="1555421162094" duration="2658000" />
       <workItem from="1555774634545" duration="1891000" />
       <workItem from="1555779249539" duration="1106000" />
-      <workItem from="1556630173916" duration="4098000" />
+      <workItem from="1556630173916" duration="4151000" />
     </task>
     <task id="LOCAL-00001" summary="DA">
       <created>1556636624144</created>
@@ -842,7 +842,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556638580599</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="DA">
+      <created>1556638882269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556638882269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -878,7 +885,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49551000" />
+    <option name="totallyTimeSpent" value="49604000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1275,14 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryActivityMock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1303,6 +1302,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding />
         </state>
       </provider>
