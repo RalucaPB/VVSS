@@ -141,9 +141,11 @@ public class MainClass {
 			Activity act = new Activity(user.getName(), start, end,
 					new LinkedList<Contact>(), description);
 
-			activityRep.addActivity(act);
+			if(activityRep.addActivity(act)){
 
-			System.out.printf("S-a adugat cu succes\n");
+			System.out.printf("S-a adugat cu succes\n");}
+			else{
+				System.out.println("Nu s-a adaugat ");}
 		} catch (IOException e) {
 			System.out.printf("Eroare de citire: %s\n" + e.getMessage());
 		}
@@ -161,8 +163,11 @@ public class MainClass {
 			String adress = in.readLine();
 			System.out.printf("Numar de telefon: ");
 			String telefon = in.readLine();
-			
-			Contact c = new Contact(name, adress, telefon);
+			System.out.printf("Email: ");
+			String email = in.readLine();
+
+
+			Contact c = new Contact(name, adress, telefon,email);
 
 			contactRep.addContact(c);
 

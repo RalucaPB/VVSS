@@ -20,8 +20,6 @@ public class RepositoryActivityFile implements RepositoryActivity{
 
 	private static final String filename = "files\\activities.txt";
 	private List<Activity> activities;
-
-	
 	public RepositoryActivityFile(RepositoryContact repcon) throws Exception
 	{
 		activities = new LinkedList<Activity>(); 
@@ -56,11 +54,12 @@ public class RepositoryActivityFile implements RepositoryActivity{
 	public boolean addActivity(Activity activity) {
 		int  i = 0;
 		boolean conflicts = false;
-
+		if ( activity.getStart().compareTo(activity.getDuration()) > 0)
+			return false;
 		while( i < activities.size() )
 		{
-			if ( activities.get(i).getStart().compareTo(activity.getDuration()) < 0 &&
-					activity.getStart().compareTo(activities.get(i).getDuration()) < 0 )
+
+			if (activity.getDuration().compareTo(activities.get(i).getStart()) >0 )
 				conflicts = true;
 			i++;
 		}
@@ -79,7 +78,6 @@ public class RepositoryActivityFile implements RepositoryActivity{
 //		activities.add(activity);
 //		return true;
 	}
-
 	@Override
 	public boolean removeActivity(Activity activity) {
 		int index = activities.indexOf(activity);

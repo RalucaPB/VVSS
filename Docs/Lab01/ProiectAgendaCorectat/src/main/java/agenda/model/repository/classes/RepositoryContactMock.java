@@ -17,11 +17,11 @@ private ContactValidator validator;
 	public RepositoryContactMock() {
 		contacts = new LinkedList<Contact>();
 		try {
-			Contact c = new Contact("Name1", "address1", "+4071122334455");
+			Contact c = new Contact("Monica", "str. Panselutelor", "+4071122334455","monica@gmail.com");
 			contacts.add(c);
-			c = new Contact("Name2", "address 2", "+4071122334466");
+			c = new Contact("Marian", "str. Rovinelor", "+4071122334466", "marian@gmail.com");
 			contacts.add(c);
-			c = new Contact("Name3", "address 3", "+4071122338866");
+			c = new Contact("Edi", "str Marea Unire", "+4071122338866", "ed@yahoo.com");
 			contacts.add(c);
 		} catch (InvalidFormatException e) {
 			// TODO Auto-generated catch block

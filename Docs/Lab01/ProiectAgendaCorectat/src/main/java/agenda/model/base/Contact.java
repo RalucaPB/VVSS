@@ -6,20 +6,24 @@ public class Contact {
 	private String Name;
 	private String Address;
 	private String Telefon;
+	private String Email;
 	
 	public Contact(){
 		Name = "";
 		Address = "";
 		Telefon = "";
+		Email="";
 	}
 	
-	public Contact(String name, String address, String telefon) throws InvalidFormatException{
+	public Contact(String name, String address, String telefon,String email) throws InvalidFormatException{
 		if (!validTelefon(telefon)) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
 		if (!validName(name)) throw new InvalidFormatException("Cannot convert", "Invalid name");
 		if (!validAddress(address)) throw new InvalidFormatException("Cannot convert", "Invalid address");
+		if(!validEmail(email))throw new InvalidFormatException("Cannot convert", "Invalid email");
 		Name = name;
 		Address = address;
 		Telefon = telefon;
+		Email=email;
 	}
 
 	public String getName() {
@@ -53,11 +57,12 @@ public class Contact {
 	{
 		String[] s = str.split(delim);
 		if (s.length!=4) throw new InvalidFormatException("Cannot convert", "Invalid data");
+		if (!validEmail(s[3])) throw new InvalidFormatException("Cannot convert", "Invalid email");
 		if (!validTelefon(s[2])) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
 		if (!validName(s[0])) throw new InvalidFormatException("Cannot convert", "Invalid name");
 		if (!validAddress(s[1])) throw new InvalidFormatException("Cannot convert", "Invalid address");
 		
-		return new Contact(s[0], s[1], s[2]);
+		return new Contact(s[0], s[1], s[2],s[3]);
 	}
 	
 	@Override
@@ -69,6 +74,7 @@ public class Contact {
 		sb.append("#");
 		sb.append(Telefon);
 		sb.append("#");
+		sb.append(Email);
 		return sb.toString();
 	}
 	
@@ -84,12 +90,16 @@ public class Contact {
 	{
 		return true;
 	}
+	private static boolean validEmail(String str)
+	{
+		return true;
+	}
 	
 	private static boolean validTelefon(String tel)
 	{
 		String[] s = tel.split("[\\p{Punct}\\s]+");
 		if (tel.charAt(0) == '+' && s.length == 2 ) return true;
-		if (tel.charAt(0) != '0')return false;
+		if (tel.charAt(0) != '0' )return false;
 		if (s.length != 1) return false;
 		return true;
 	}
@@ -100,9 +110,16 @@ public class Contact {
 		if (! (obj instanceof Contact)) return false;
 		Contact o = (Contact)obj;
 		if (Name.equals(o.Name) && Address.equals(o.Address) &&
-				Telefon.equals(o.Telefon))
+				Telefon.equals(o.Telefon) && Email.equals(o.Email))
 			return true;
 		return false;
 	}
-	
+
+	public String getEmail() {
+		return Email;
+	}
+
+	public void setEmail(String email) {
+		Email = email;
+	}
 }
