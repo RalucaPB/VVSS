@@ -65,7 +65,7 @@ public class AddActivityTest {
 					"Lunch break");
 			rep.addActivity(act3);
 
-		} catch (ParseException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		assertTrue(0 == rep.count());
