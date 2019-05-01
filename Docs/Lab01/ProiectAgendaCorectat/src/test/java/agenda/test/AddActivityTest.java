@@ -15,7 +15,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class AddActivityTest {
-	private Activity act1,act2;
+	private Activity act1,act2,act3;
 	private RepositoryActivity rep;
 	
 	@Before
@@ -58,13 +58,12 @@ public class AddActivityTest {
 		try {
 			for (Activity a : rep.getActivities())
 				rep.removeActivity(a);
-
-			act1 = new Activity("Activity",
+			act3 = new Activity("Activity",
 					df.parse("03/04/2002 15:50"),
 					df.parse("03/04/2002 14:50"),
 					null,
 					"Lunch break");
-			rep.addActivity(act1);
+			rep.addActivity(act3);
 
 		} catch (ParseException e) {
 			e.printStackTrace();
