@@ -68,13 +68,11 @@ public class AfisActivityTest {
 		rep.addActivity(act);
 
 		c.set(2013, 3 - 1, 20);
-		try {
-			rep.activitiesOnDate(((Object) 1).toString(), c.getTime());
-		} catch (Exception e) {
-			assertTrue(true);
-		}
+
+		List<Activity> result = rep.activitiesOnDate("name2", c.getTime());
+		assertTrue(result.size() == 0);
 	}
-	
+	/*
 	@Test
 	public void testCase3() {
 		for (Activity act : rep.getActivities())
@@ -113,5 +111,5 @@ public class AfisActivityTest {
 		List<Activity> result = rep.activitiesOnDate("name1", c.getTime());
 		
 		assertTrue(result.size() == 0);
-	}
+	}*/
 }
