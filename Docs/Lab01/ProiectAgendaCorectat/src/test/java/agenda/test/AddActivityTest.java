@@ -15,7 +15,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class AddActivityTest {
-	private Activity act;
+	private Activity act1,act2;
 	private RepositoryActivity rep;
 	
 	@Before
@@ -28,47 +28,50 @@ public class AddActivityTest {
 	{
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 		try {
-			act = new Activity("name1", 
-					df.parse("03/20/2013 12:00"), 
-					df.parse("03/20/2013 13:00"),
+			for (Activity a : rep.getActivities())
+				rep.removeActivity(a);
+
+			act1 = new Activity("Activity",
+					df.parse("03/04/2002 10:00"),
+					df.parse("03/04/2002 12:30"),
 					null,
 					"Lunch break");
-			rep.addActivity(act);
+
+			act2 = new Activity("Activity",
+					df.parse("03/04/2002 14:00"),
+					df.parse("03/04/2002 15:00"),
+					null,
+					"Lunch break");
+			rep.addActivity(act2);
+			rep.addActivity(act1);
+
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		assertTrue(1 == rep.count());
+		assertTrue(2 == rep.count());
 	}
 	
 	@Test
 	public void testCase2()
 	{
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
-		try{
+		try {
 			for (Activity a : rep.getActivities())
 				rep.removeActivity(a);
-			
-			act = new Activity("name1",
-					df.parse("03/20/2013 12:00"), 
-					df.parse("03/20/2013 13:00"),
+
+			act1 = new Activity("Activity",
+					df.parse("03/04/2002 15:50"),
+					df.parse("03/04/2002 14:50"),
 					null,
 					"Lunch break");
-			rep.addActivity(act);
-			
-			act = new Activity("name1",
-					df.parse("03/21/2013 12:00"), 
-					df.parse("03/21/2013 13:00"),
-					null,
-					"Lunch break");
-			rep.addActivity(act);
+			rep.addActivity(act1);
+
+		} catch (ParseException e) {
+			e.printStackTrace();
 		}
-		catch(Exception e){}	
-		int c = rep.count();
-		assertTrue( c == 2);
-		for (Activity a : rep.getActivities())
-			rep.removeActivity(a);
+		assertTrue(0 == rep.count());
 	}
-	
+	/*
 	@Test
 	public void testCase3()
 	{
@@ -154,5 +157,5 @@ public class AddActivityTest {
 		assertTrue( 1 == rep.count());
 		for (Activity a : rep.getActivities())
 			rep.removeActivity(a);
-	}
+	}*/
 }
