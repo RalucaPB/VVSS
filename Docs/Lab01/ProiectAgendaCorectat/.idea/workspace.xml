@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a366959-9e49-4bbf-802b-cabefa19af5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/test/AddActivityTest.java" afterPath="$PROJECT_DIR$/src/test/java/agenda/test/AddActivityTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,8 +78,8 @@
       <file leaf-file-name="AddActivityTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddActivityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+            <state relative-caret-position="374">
+              <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -431,7 +430,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddContactTest">
+  <component name="RunManager" selected="JUnit.AddActivityTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
@@ -458,6 +457,32 @@
       <method>
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="AddActivityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="agenda.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <module name="ProiectAgenda" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="agenda.test" />
+      <option name="MAIN_CLASS_NAME" value="agenda.test.AddActivityTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="AddContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -593,30 +618,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestValidAfis and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <extension name="recording" autostart="true" />
-      <module name="ProiectAgenda" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns>
-        <pattern testClass="agenda.test.TestValidAfis" />
-        <pattern testClass="agenda.test.TestNonValidAfis" />
-      </patterns>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="recording" autostart="true" />
@@ -685,19 +686,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RepositoryActivityFileTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestValidAfis and 1 more" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BigBang" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCase3ECP" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCase1BVA" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.AddContactTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BigBang" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCase3ECP" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCase1BVA" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AddContactTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AddActivityTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AddContactTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestCase1BVA" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCase3ECP" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BigBang" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestValidAfis and 1 more" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AddActivityTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AddContactTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCase1BVA" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestCase3ECP" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BigBang" />
       </list>
     </recent_temporary>
   </component>
@@ -731,7 +732,7 @@
       <workItem from="1555421162094" duration="2658000" />
       <workItem from="1555774634545" duration="1891000" />
       <workItem from="1555779249539" duration="1106000" />
-      <workItem from="1556630173916" duration="7306000" />
+      <workItem from="1556630173916" duration="7966000" />
     </task>
     <task id="LOCAL-00001" summary="DA">
       <created>1556636624144</created>
@@ -789,10 +790,20 @@
       <option name="project" value="LOCAL" />
       <updated>1556639576321</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="DA">
+      <created>1556707469716</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556707469716</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="AddActivityTest - 2019.05.01 at 14h 01m 06s.xml">
+      <configuration name="AddActivityTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="AddContactTest - 2019.04.30 at 17h 56m 47s.xml">
       <configuration name="AddContactTest" configurationId="JUnit" />
     </history-entry>
@@ -817,15 +828,12 @@
     <history-entry file="TestCase1BVA - 2019.04.30 at 17h 09m 05s.xml">
       <configuration name="TestCase1BVA" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCase3ECP - 2019.04.30 at 17h 07m 43s.xml">
-      <configuration name="TestCase3ECP" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCase3ECP - 2019.04.30 at 17h 08m 13s.xml">
       <configuration name="TestCase3ECP" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52759000" />
+    <option name="totallyTimeSpent" value="53419000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1249,8 +1257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddActivityTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
           <folding />
         </state>
       </provider>
